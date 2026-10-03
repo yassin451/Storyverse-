@@ -26,7 +26,7 @@ jobs:
 
       - name: Build APK
         run: |
-          unzip -q StoryVerseAndroidProject_with_action.zip
+          unzip -oq StoryVerseAndroidProject_with_action.zip
           gradle -p StoryVerseAndroid assembleDebug
 
       - name: Upload APK
